@@ -8,14 +8,11 @@ namespace AllDelegate
 {
     public class Class1
     {
-        public Action<bool> _listShow;
-        public Class1(Action<bool> action)
+        public void Show(bool a)
         {
-            _listShow = action;
+            Console.WriteLine(a);
         }
-        public Class1()
-        {
-        }
+
         public int Pow(int x, int y)
         {
             return x * y;
